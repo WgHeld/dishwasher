@@ -1,0 +1,442 @@
+[
+    {
+        "id": "ac8f56f3-9ccc-4896-b2e0-a5a9fc7e603b",
+        "name": "infrared",
+        "model": {
+            "id": "bab45b9c-1c44-4e71-8e98-a321c658df47",
+            "name": "Wunderbar Infrared Sensor",
+            "manufacturer": "Relayr GmbH",
+            "readings": [],
+            "commands": [
+                {
+                    "command": "cmd",
+                    "path": "led",
+                    "unit": "integer",
+                    "maximum": 1,
+                    "minimum": 0
+                }
+            ]
+        },
+        "firmwareVersion": "1.0.0",
+        "secret": "874617",
+        "owner": "87d264ec-0bde-48f8-aaa8-cab24667688e",
+        "description": "Wunderbar Infrared Sensor",
+        "public": false
+    },
+    {
+        "id": "f4ab513e-590d-494f-8586-2e06af2d186d",
+        "name": "DishWasher",
+        "model": {
+            "id": "96889445-5b12-4886-80ba-120913eac2fe",
+            "name": "Bosch Dishwascher",
+            "manufacturer": "Bosch",
+            "readings": [
+                {
+                    "meaning": "power",
+                    "unit": "boolean",
+                    "maximum": 2,
+                    "minimum": 1,
+                    "path": "power_unit"
+                },
+                {
+                    "meaning": "energy_management",
+                    "unit": "integer",
+                    "maximum": 2,
+                    "minimum": 1,
+                    "path": "power_unit"
+                },
+                {
+                    "meaning": "open",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "door"
+                },
+                {
+                    "meaning": "locked",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "door"
+                },
+                {
+                    "meaning": "time",
+                    "unit": "dateTime",
+                    "path": "clock"
+                },
+                {
+                    "meaning": "alarm",
+                    "unit": "dateTime",
+                    "path": "clock"
+                },
+                {
+                    "meaning": "interior_light",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "interior"
+                },
+                {
+                    "meaning": "luminosity",
+                    "unit": "boolean",
+                    "path": "interior"
+                },
+                {
+                    "meaning": "clockness",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "display"
+                },
+                {
+                    "meaning": "display",
+                    "unit": "boolean",
+                    "path": "display"
+                },
+                {
+                    "meaning": "rinse_aid",
+                    "unit": "integer",
+                    "maximum": 6,
+                    "minimum": 0,
+                    "path": "consumables"
+                },
+                {
+                    "meaning": "rinse_aid_lack",
+                    "unit": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
+                    "path": "consumables"
+                },
+                {
+                    "meaning": "check_filter",
+                    "unit": "integer",
+                    "maximum": 3,
+                    "minimum": 0,
+                    "path": "drainage"
+                },
+                {
+                    "meaning": "drain_blockage",
+                    "unit": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
+                    "path": "drainage"
+                },
+                {
+                    "meaning": "turbidity",
+                    "unit": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
+                    "path": "drainage"
+                },
+                {
+                    "meaning": "aborted",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "programme"
+                },
+                {
+                    "meaning": "sabbath",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "programme"
+                },
+                {
+                    "meaning": "paused",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "programme"
+                },
+                {
+                    "meaning": "finished",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "programme"
+                },
+                {
+                    "meaning": "auto_power_off",
+                    "unit": "integer",
+                    "maximum": 2,
+                    "minimum": 0,
+                    "path": "programme"
+                },
+                {
+                    "meaning": "brilliance_dry",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "programme"
+                },
+                {
+                    "meaning": "hygiene_plus",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "programme"
+                },
+                {
+                    "meaning": "operation_state",
+                    "unit": "integer",
+                    "maximum": 8,
+                    "minimum": 0,
+                    "path": "programme"
+                },
+                {
+                    "meaning": "eco_as_default",
+                    "unit": "integer",
+                    "maximum": 1,
+                    "minimum": 0,
+                    "path": "programme"
+                },
+                {
+                    "meaning": "intensiv_zone",
+                    "unit": "boolean",
+                    "path": "programme"
+                },
+                {
+                    "meaning": "phase",
+                    "unit": "integer",
+                    "maximum": 4,
+                    "minimum": 0,
+                    "path": "programme"
+                }
+            ],
+            "commands": [
+                {
+                    "command": "energy_management",
+                    "path": "power_unit",
+                    "unit": "integer",
+                    "maximum": 2,
+                    "minimum": 1
+                },
+                {
+                    "command": "locked",
+                    "path": "door",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0
+                },
+                {
+                    "command": "hardness",
+                    "path": "pump"
+                },
+                {
+                    "command": "luminosity",
+                    "path": "interior",
+                    "unit": "boolean"
+                },
+                {
+                    "command": "rinse_aid",
+                    "path": "consumables",
+                    "unit": "integer",
+                    "maximum": 6,
+                    "minimum": 0
+                },
+                {
+                    "command": "turbidity",
+                    "path": "drainage",
+                    "unit": "integer",
+                    "maximum": 2,
+                    "minimum": 0
+                },
+                {
+                    "command": "brilliance_dry",
+                    "path": "programme",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0
+                },
+                {
+                    "command": "hygiene_plus",
+                    "path": "programme",
+                    "unit": "boolean",
+                    "maximum": 1,
+                    "minimum": 0
+                },
+                {
+                    "command": "eco_as_default",
+                    "path": "programme",
+                    "unit": "integer",
+                    "maximum": 1,
+                    "minimum": 0
+                },
+                {
+                    "command": "intensiv_zone",
+                    "path": "programme",
+                    "unit": "boolean"
+                }
+            ]
+        },
+        "firmwareVersion": "0.0.1",
+        "secret": "040414",
+        "owner": "87d264ec-0bde-48f8-aaa8-cab24667688e",
+        "public": false
+    },
+    {
+        "id": "a2e4d803-82d2-4504-add2-8e99111d9178",
+        "name": "gyroscope",
+        "model": {
+            "id": "173c44b5-334e-493f-8eb8-82c8cc65d29f",
+            "name": "Wunderbar Accelerometer & Gyroscope",
+            "manufacturer": "Relayr GmbH",
+            "readings": [
+                {
+                    "meaning": "acceleration",
+                    "unit": "g"
+                },
+                {
+                    "meaning": "angularSpeed",
+                    "unit": "degrees_per_second"
+                }
+            ],
+            "commands": [
+                {
+                    "command": "cmd",
+                    "path": "led",
+                    "unit": "integer",
+                    "maximum": 1,
+                    "minimum": 0
+                }
+            ]
+        },
+        "firmwareVersion": "1.0.0",
+        "secret": "788123",
+        "owner": "87d264ec-0bde-48f8-aaa8-cab24667688e",
+        "description": "Wunderbar Accelerometer & Gyroscope",
+        "public": false
+    },
+    {
+        "id": "89287aad-db10-4303-ad01-5547c67eca96",
+        "name": "microphone",
+        "model": {
+            "id": "4f38b6c6-a8e9-4f93-91cd-2ac4064b7b5a",
+            "name": "Wunderbar Microphone",
+            "manufacturer": "Relayr GmbH",
+            "readings": [
+                {
+                    "meaning": "noiseLevel",
+                    "unit": "dba"
+                }
+            ],
+            "commands": [
+                {
+                    "command": "cmd",
+                    "path": "led",
+                    "unit": "integer",
+                    "maximum": 1,
+                    "minimum": 0
+                }
+            ]
+        },
+        "firmwareVersion": "1.0.0",
+        "secret": "412793",
+        "owner": "87d264ec-0bde-48f8-aaa8-cab24667688e",
+        "description": "Wunderbar Microphone",
+        "public": false
+    },
+    {
+        "id": "a7ec5e46-4f6e-4193-a21a-5b5c7cb34485",
+        "name": "thermometer",
+        "model": {
+            "id": "ecf6cf94-cb07-43ac-a85e-dccf26b48c86",
+            "name": "Wunderbar Thermometer & Humidity Sensor",
+            "manufacturer": "Relayr GmbH",
+            "readings": [
+                {
+                    "meaning": "humidity",
+                    "unit": "percent"
+                },
+                {
+                    "meaning": "temperature",
+                    "unit": "celsius",
+                    "maximum": 100,
+                    "minimum": -100,
+                    "precision": 0.25
+                }
+            ],
+            "commands": [
+                {
+                    "command": "cmd",
+                    "path": "led",
+                    "unit": "integer",
+                    "maximum": 1,
+                    "minimum": 0
+                }
+            ]
+        },
+        "firmwareVersion": "1.0.0",
+        "secret": "239374",
+        "owner": "87d264ec-0bde-48f8-aaa8-cab24667688e",
+        "description": "Wunderbar Thermometer & Humidity Sensor",
+        "public": false
+    },
+    {
+        "id": "103156b3-1a78-42c2-a4af-1512721ded3d",
+        "name": "light",
+        "model": {
+            "id": "a7ec1b21-8582-4304-b1cf-15a1fc66d1e8",
+            "name": "Wunderbar Light & Proximity Sensor",
+            "manufacturer": "Relayr GmbH",
+            "readings": [
+                {
+                    "meaning": "luminosity",
+                    "unit": "lumen"
+                },
+                {
+                    "meaning": "color",
+                    "unit": "rgb"
+                },
+                {
+                    "meaning": "proximity",
+                    "unit": "number"
+                }
+            ],
+            "commands": [
+                {
+                    "command": "cmd",
+                    "path": "led",
+                    "unit": "integer",
+                    "maximum": 1,
+                    "minimum": 0
+                }
+            ]
+        },
+        "firmwareVersion": "1.0.0",
+        "secret": "912499",
+        "owner": "87d264ec-0bde-48f8-aaa8-cab24667688e",
+        "description": "Wunderbar Light & Proximity Sensor",
+        "public": false
+    },
+    {
+        "id": "ada09702-5898-42fb-9c42-7ef0c1a1dd45",
+        "name": "bridge",
+        "model": {
+            "id": "ebd828dd-250c-4baf-807d-69d85bed065b",
+            "name": "Wunderbar Bridge Module",
+            "manufacturer": "Relayr GmbH",
+            "readings": [
+                {
+                    "meaning": "raw",
+                    "unit": "raw"
+                }
+            ],
+            "commands": [
+                {
+                    "command": "cmd",
+                    "path": "led",
+                    "unit": "integer",
+                    "maximum": 1,
+                    "minimum": 0
+                }
+            ]
+        },
+        "firmwareVersion": "1.0.0",
+        "secret": "917627",
+        "owner": "87d264ec-0bde-48f8-aaa8-cab24667688e",
+        "description": "Wunderbar Bridge Module",
+        "public": false
+    }
+]
